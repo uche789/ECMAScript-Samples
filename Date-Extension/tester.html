@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>Today is: <span id="day"></span></div>
+	<div>Today's date is: <span id="date"></span></div>
+	<div>Current time is: <span id="time"></span></div>
+	<script type="text/javascript" src="ecmascript-6.js"></script>
+	<script type="text/javascript">
+		var currentDate = new DateExtension();
+		var day = document.getElementById('day');
+		var date = document.getElementById('date');
+		var time = document.getElementById('time');
+		day.innerHTML = currentDate.getDayString();
+		date.innerHTML = currentDate.getCurrentDate("mm-dd-yyyy");
+		time.innerHTML = currentDate.getCurrentTime();
+
+	</script>
+</body>
+</html>
